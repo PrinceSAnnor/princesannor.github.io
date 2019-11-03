@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="projects.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-reply w3-xxlarge"></i>
+        <p>BACK</p>
+      </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="projects.html" class="w3-bar-item w3-button" style="width:25% !important">BACK</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">Community Driven Development </h1>
+    <p>Research Ethnographer, Philippines</p>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About</h2>
+    <hr style="width:200px" class="w3-opacity">
+   <p> Community Driven Development (CDD) is a good initiative because it achieves substantial socio-economic development, therefore, its other controversial goals, improvement of social cohesion and governance, should be underemphasized due to the complexities involved in capturing them. In CDD programs, communities are given the chance to choose, implement and maintain projects they are interested in, with funds that are mostly external to the community. In the subsequent paragraphs, I highlight the socio-economic goal of CDDs and attempt to address some of the controversies found in the literature. I then explore the more controversial goals, improvement of social cohesion and governance, and conclude that these should be underemphasized due to the sufficiency of the first goal and the complexities involved in capturing them. 
+CDD subprojects, usually small-scale infrastructural projects, are sustainable because they are chosen and implemented by the community. Mansuri et al. (2004) argue that there are usually economic or social powers that affect the project selection process during such participatory meetings due to their influence in society. White et al. (2018) also argue that CDDs do not always target the poorest of communities and in application-based CDD programs, these powers can create a better proposal for their projects of interest. I argue that although these concerns are legitimate, CDDs can be improved to address these issues. For example, CDDs, like KALAHI CIDDS, have used allocation-based grants instead of application-based in their implementations and increased transparency in how grants were allocated (Beatty et al. 2018). In general, CDDs are essential because they are able to utilize materials and labor that are local or closer to communities, making implementation easier and practical. For example, KALAHI CIDDS enabled remote indigenous people in the Philippines to identify and implement a water system. In such hard to reach areas, CDDs may be the only hope for the development of communities. 
+The endline report of KALAHI CIDDS revealed that this intervention spurred community members to engage in developmental activities  (Beatty et al. 2018). However, it also revealed that there was no change in how the members in the community interacted about community-wide problems and how they dealt with hardships and natural disasters  (Beatty et al. 2018). Moreover, it revealed that although KALAHI CIDDS delivered the projects the community preferred, there was no change in their qualitative and quantitative participation in local governance, specifically with decision making and implementation (Beatty et al. 2018). 
+These results are not surprising to me as there are many facets to social change that might not have been captured in the report. Social change may take more time to materialize and may need the synergy of other interventions. There are also many confounding variables that come into play when deeply entrenched cultural and political norms about government leadership are considered. The goal of improving social cohesion and governance can, and should, be underemphasized due to the complexities involved in capturing them in comparison to the immediate substantial socio-economic benefits. These two controversial goals may be better addressed with targeted education initiatives so they should be underemphasized in CDDs.
+In conclusion, improvement of social cohesion and governance should be underemphasized when presenting CDDs due to the complexities involved in capturing them. CDDs have a sufficient and substantial socio-economic benefit in how they reach remote and poor communities with projects they deem essential, so they should be encouraged and improved to create more sustainable developmental impact. 
+
+References
+Mansuri, Ghazala & Vijayendra Rao 2004. Community-Based and –Driven Development: A Critical Review. World Bank Policy Research Paper pp 1-10.
+White, Howard, Radhika Menon and Hugh Waddington. 2018.  Community-driven development: does it build social cohesion or infrastructure? A mixed-method evidence synthesis. New Delhi: 3ie  
+Beatty, Amanda, Ariel BenYishay, Elisabeth King, Aniceto Orbeta, Menno Pradhan. Kalahi-CIDSS Impact Evaluation: Third Round Report:  Washington DC: Millennium Challenge Corporation, excerpts
+  </p>
+    
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="project-img/website/Community Driven Development/IMG-20190122-WA0013.jpg" style="width:100%">
+        <img src="project-img/website/Community Driven Development/IMG-20190122-WA0015.jpg" style="width:100%">
+        <img src="project-img/website/Community Driven Development/IMG-20190122-WA0018.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="project-img/website/Community Driven Development/IMG-20190122-WA0021.jpg" style="width:100%">
+        <img src="project-img/website/Community Driven Development/IMG-20190122-WA0022.jpg" style="width:100%">
+        <img src="project-img/website/Community Driven Development/IMG-20190122-WA0027.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey">
+        <a href="https://www.facebook.com/princestevenannor" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i></a>
+        <a href="https://twitter.com/princesannor" target="_blank"><i class="fa fa-twitter w3-hover-opacity w3-xxlarge"></i></a>
+        <a href="https://www.linkedin.com/in/princesannor/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity w3-xxlarge"></i></a>
+<p>&copy; Prince Steven Annor 2019</p>    
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
