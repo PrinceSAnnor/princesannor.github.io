@@ -23,7 +23,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat' ,"Roboto", sans-serif}
 }
 </style>
 <body class="w3-light-grey">
-    <!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <a class="navbar-brand" href="#">My Profile</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -37,19 +37,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat' ,"Roboto", sans-serif}
           </ul>
         </div>  
       </nav>
-      sdfg-->
-      <div class="w3-top">
-        <div class="w3-bar bg-dark w3-text-white w3-card">
-          <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-          <a class="w3-bar-item w3-button w3-padding-large">My Profile</a>
-          <a href="projects.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Projects</a>     
-          </div>
-           </div>
-           <div id="navDemo" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-            <a href="projects.html" class="w3-bar-item w3-button w3-padding-large w3-text-white" onclick="myFunction()">Projects</a>
-          </div>
 <!-- Page Container -->
-<div class="w3-content " style="max-width:1400px; margin-top:80px;">
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
   <!-- The Grid -->
   <div class="w3-row-padding">
@@ -333,14 +322,4 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat' ,"Roboto", sans-serif}
   </footer>
 
 </body>
-<script>
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
 </html>
