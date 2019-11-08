@@ -12,6 +12,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 <style>
+#more {display: none;}
 html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat' ,"Roboto", sans-serif}
 .btn {
   background-color: teal;
@@ -20,6 +21,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat' ,"Roboto", sans-serif}
   padding: 12px 30px;
   cursor: pointer;
   font-size: 16px;
+}
+.btn1 {
+  background-color: teal;
+  border: none;
+  color: white;
+  padding: 3px 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Montserrat' ,"Roboto", sans-serif
 }
 </style>
 <body class="w3-light-grey">
@@ -152,9 +162,34 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat' ,"Roboto", sans-serif}
         <div class="w3-container w3-card w3-white">
             <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-info fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About</h2>
             <div class="w3-container">
-              <p>Prince is a self-motivated, driven, young professional who aspires to create impactful technological solutions in research, education, and industry. 
+             <!-- <p>Prince is a self-motivated, driven, young professional who aspires to create impactful technological solutions in research, education, and industry. 
                 He is currently a computer engineering senior at NYUAD, and he loves to work on multimedia, social Internet of Things, Robotics and AI-enabled creative projects. Prince is also an
                  IEEE published undergraduate researcher, and he organizes, teaches, and mentors at coding workshops in the UAE and in Ghana.</p>
+             -->
+             <p>Prince is a self-motivated, driven, young professional who aspires to create impactful technological solutions in research, education, and industry. Having studied or worked in Abu Dhabi, New York, Shanghai, Accra, Karnataka, Mumbai and Manila, <span id="dots">...</span><span id="more">Prince is globally minded and effective in delivering creative results tailored for clients. <br><br>
+             His journey with computer programming started in 2014 at an innovation boot camp, where he led his team to win the pitch day. Prince has since worked on various projects that connect people to services that improve productivity like the Mobile Print Project in 2016 that provided over 300 students with mobile printing capability. In 2018, he and two colleagues won the UAE Space Hackathon in Dubai. He also placed second in the HackNYU competition at NYUAD.<br><br>
+             In research, Prince developed a haptic-enabled virtual reality museum and co-authored an IEEE publication titled ‘The Role of Haptics in Digital Archaeology and Heritage Recording Processes’ in 2018. He also built a computer vision and Simultaneous Localization and Mapping system in 2019 that can be applied to collaborative drone swarms for relative localization.<br><br>
+             In education, Prince has shared his passion for coding by teaching and mentoring over 100 students at several coding workshops in Accra and in Abu Dhabi. In 2019, he was awarded the Processing Foundation fellowship, where he developed an automatic grading system and launched a mobile-based coding learning platform to over 700 students in Africa and the diaspora.<br><br>
+             Prince is also a multimedia engineer/hobbyist, and he loves to work on social Internet of Things, Robotics and AI-enabled creative projects. He is a computer engineering senior and is currently involved in event planning, community development, budget management, equipment setup, and multimedia communications at Student Life and Residential Education at NYUAD.</span></p>
+	     <button onclick="myFunction()" id="myBtn" class="btn1">Read more</button>
+
+		<script>
+		function myFunction() {
+		  var dots = document.getElementById("dots");
+		  var moreText = document.getElementById("more");
+		  var btnText = document.getElementById("myBtn");
+
+		  if (dots.style.display === "none") {
+		    dots.style.display = "inline";
+		    btnText.innerHTML = "Read more"; 
+		    moreText.style.display = "none";
+		  } else {
+		    dots.style.display = "none";
+		    btnText.innerHTML = "Read less"; 
+		    moreText.style.display = "inline";
+		  }
+		}
+		</script>
           </div>
         </div>
         <br>
