@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 <style>
 #more {display: none;}
@@ -46,6 +47,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat' ,"Roboto", sans-serif}
 }
 </style>
 <body class="w3-light-grey">
+  
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <a class="navbar-brand" href="#">My Profile</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -53,41 +55,36 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat' ,"Roboto", sans-serif}
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
+              <li class="nav-item">
+                  <div class="w3-dropdown-hover w3-left bg-dark w3-text-white">
+                    <button class="w3-button navbar-brand" title="More">Experience <i class="fa fa-caret-down"></i></button>     
+                    <div class="w3-dropdown-content w3-bar-block">
+                      <a href="efsi2017.html" class="w3-bar-item w3-button">EFSI 2017</a>
+                      <a href="efsi2018.html" class="w3-bar-item w3-button">EFSI 2018</a>
+                      <a href="ccd.html" class="w3-bar-item w3-button">Community Driven Development</a>
+                      <a href="mobile-print.html" class="w3-bar-item w3-button">Mobile Print Project</a>
+                      <a href="robotics-lab.html" class="w3-bar-item w3-button">Robotics Lab</a>
+                      <a href="ra.html" class="w3-bar-item w3-button">Residential Education</a>
+                      <a href="space-hack.html" class="w3-bar-item w3-button">MBRSC Mars Project</a>
+                      <a href="steinhardt.html" class="w3-bar-item w3-button">Developer (NYU Steinhdardt)</a>
+                      <a href="nsesa.html" class="w3-bar-item w3-button">Suacode Africa</a>
+                      <a href="student-life.html" class="w3-bar-item w3-button">Student Life Facilities</a>
+                      <a href="code-of-music.html" class="w3-bar-item w3-button">Code of Music</a>
+                    </div>
+                  </div>
+                </li>
             <li class="nav-item">
-              <div class="w3-dropdown-hover w3-hide-small w3-right bg-dark w3-text-white">
-                <button class="w3-button navbar-brand" title="More">Experience <i class="fa fa-caret-down"></i></button>     
-                <div class="w3-dropdown-content w3-bar-block">
-                  <a href="efsi2017.html" class="w3-bar-item w3-button">EFSI 2017</a>
-                  <a href="efsi2018.html" class="w3-bar-item w3-button">EFSI 2018</a>
-                  <a href="ccd.html" class="w3-bar-item w3-button">Community Driven Development</a>
-                  <a href="mobile-print.html" class="w3-bar-item w3-button">Mobile Print Project</a>
-                  <a href="robotics-lab.html" class="w3-bar-item w3-button">Robotics Lab</a>
-                  <a href="ra.html" class="w3-bar-item w3-button">Residential Education</a>
-                  <a href="space-hack.html" class="w3-bar-item w3-button">MBRSC Mars Project</a>
-                  <a href="steinhardt.html" class="w3-bar-item w3-button">Developer (NYU Steinhdardt)</a>
-                  <a href="nsesa.html" class="w3-bar-item w3-button">Suacode Africa</a>
-                  <a href="student-life.html" class="w3-bar-item w3-button">Student Life Facilities</a>
-                  <a href="code-of-music.html" class="w3-bar-item w3-button">Code of Music</a>
+                <div class="w3-dropdown-hover w3-left bg-dark w3-text-white">
+                  <button class="w3-button navbar-brand" title="More">CV <i class="fa fa-caret-down"></i></button>     
+                  <div class="w3-dropdown-content w3-bar-block">
+                    <a href="doc/prince_cv4-converted.pdf" class="w3-bar-item w3-button">Work CV</a>
+                    <a href="doc/prince_cv4-converted.pdf" class="w3-bar-item w3-button">Research CV</a>
+                  </div>
                 </div>
-              </div>
-            </li>
-           
-          </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <div class="w3-dropdown-hover w3-hide-small w3-left bg-dark w3-text-white">
-                <button class="w3-button navbar-brand" title="More">CV <i class="fa fa-caret-down"></i></button>     
-                <div class="w3-dropdown-content w3-bar-block">
-                  <a href="doc/prince_cv4-converted.pdf" class="w3-bar-item w3-button">Work CV</a>
-                  <a href="doc/prince_cv4-converted.pdf" class="w3-bar-item w3-button">Research CV</a>
-                </div>
-              </div>
-            </li>          
+              </li>      
           </ul>
         </div>  
- 
       </nav>
-
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -203,10 +200,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat' ,"Roboto", sans-serif}
         <div class="w3-container w3-card w3-white">
             <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-info fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About</h2>
             <div class="w3-container">
-             <!-- <p>Prince is a self-motivated, driven, young professional who aspires to create impactful technological solutions in research, education, and industry. 
-                He is currently a computer engineering senior at NYUAD, and he loves to work on multimedia, social Internet of Things, Robotics and AI-enabled creative projects. Prince is also an
-                 IEEE published undergraduate researcher, and he organizes, teaches, and mentors at coding workshops in the UAE and in Ghana.</p>
-             -->
              <p>Prince is a self-motivated, driven, young professional who aspires to create impactful technological solutions in research, education, and industry. Having studied or worked in Abu Dhabi, New York, Shanghai, Accra, Karnataka, Mumbai and Manila, <span id="dots">...</span><span id="more">Prince is globally minded and effective in delivering creative results tailored for clients. <br><br>
              His journey with computer programming started in 2014 at an innovation boot camp, where he led his team to win the pitch day. Prince has since worked on various projects that connect people to services that improve productivity like the Mobile Print Project in 2016 that provided over 300 students with mobile printing capability. In 2018, he and two colleagues won the UAE Space Hackathon in Dubai. He also placed second in the HackNYU competition at NYUAD.<br><br>
              In research, Prince developed a haptic-enabled virtual reality museum and co-authored an IEEE publication titled ‘The Role of Haptics in Digital Archaeology and Heritage Recording Processes’ in 2018. He also built a computer vision and Simultaneous Localization and Mapping system in 2019 that can be applied to collaborative drone swarms for relative localization.<br><br>
@@ -407,4 +400,14 @@ frameborder="0" allowfullscreen class="video"></iframe>
   </footer>
 
 </body>
+<script>
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 </html>
