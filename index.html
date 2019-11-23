@@ -54,9 +54,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat' ,"Roboto", sans-serif}
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <div class="w3-dropdown-hover w3-hide-small w3-right">
-                <button class="w3-padding-large w3-button" title="More">EXPERIENCE <i class="fa fa-caret-down"></i></button>     
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <div class="w3-dropdown-hover w3-hide-small w3-right bg-dark w3-text-white">
+                <button class="w3-button navbar-brand" title="More">Experience <i class="fa fa-caret-down"></i></button>     
+                <div class="w3-dropdown-content w3-bar-block">
                   <a href="efsi2017.html" class="w3-bar-item w3-button">EFSI 2017</a>
                   <a href="efsi2018.html" class="w3-bar-item w3-button">EFSI 2018</a>
                   <a href="ccd.html" class="w3-bar-item w3-button">Community Driven Development</a>
@@ -73,8 +73,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat' ,"Roboto", sans-serif}
             </li>
            
           </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <div class="w3-dropdown-hover w3-hide-small w3-left bg-dark w3-text-white">
+                <button class="w3-button navbar-brand" title="More">CV <i class="fa fa-caret-down"></i></button>     
+                <div class="w3-dropdown-content w3-bar-block">
+                  <a href="doc/prince_cv4-converted.pdf" class="w3-bar-item w3-button">Work CV</a>
+                  <a href="doc/prince_cv4-converted.pdf" class="w3-bar-item w3-button">Research CV</a>
+                </div>
+              </div>
+            </li>          
+          </ul>
         </div>  
+ 
       </nav>
+
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -199,10 +212,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat' ,"Roboto", sans-serif}
              In research, Prince developed a haptic-enabled virtual reality museum and co-authored an IEEE publication titled ‘The Role of Haptics in Digital Archaeology and Heritage Recording Processes’ in 2018. He also built a computer vision and Simultaneous Localization and Mapping system in 2019 that can be applied to collaborative drone swarms for relative localization.<br><br>
              In education, Prince has shared his passion for coding by teaching and mentoring over 100 students at several coding workshops in Accra and in Abu Dhabi. In 2019, he was awarded the Processing Foundation fellowship, where he developed an automatic grading system and launched a mobile-based coding learning platform to over 700 students in Africa and the diaspora.<br><br>
              Prince is also a multimedia engineer/hobbyist, and he loves to work on social Internet of Things, Robotics and AI-enabled creative projects. He is a computer engineering senior and is currently involved in event planning, community development, budget management, equipment setup, and multimedia communications at Student Life and Residential Education at NYUAD.</span></p>
-	     <button onclick="myFunction()" id="myBtn" class="btn1">Read more</button>
+	     <button onclick="myExtendAboutFunction()" id="myBtn" class="btn1">Read more</button>
 
 		<script>
-		function myFunction() {
+		function myExtendAboutFunction() {
 		  var dots = document.getElementById("dots");
 		  var moreText = document.getElementById("more");
 		  var btnText = document.getElementById("myBtn");
@@ -386,10 +399,11 @@ frameborder="0" allowfullscreen class="video"></iframe>
 
     <!-- Footer -->
     <footer class="w3-content w3-padding-64 w3-text-grey">
-        <a href="https://www.facebook.com/princestevenannor" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i></a>
-        <a href="https://twitter.com/princesannor" target="_blank"><i class="fa fa-twitter w3-hover-opacity w3-xxlarge"></i></a>
-        <a href="https://www.linkedin.com/in/princesannor/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity w3-xxlarge"></i></a>
-<p>&copy; Prince Steven Annor 2019</p>    
+        <a href="https://www.facebook.com/princestevenannor" target="_blank"> &nbsp; <i class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i></a>
+        <a href="https://twitter.com/princesannor" target="_blank">&nbsp;<i class="fa fa-twitter w3-hover-opacity w3-xxlarge" style="color: rgb(8, 160, 233)"></i></a>
+        <a href="https://www.linkedin.com/in/princesannor/" target="_blank">&nbsp;<i class="fa fa-linkedin w3-hover-opacity w3-xxlarge" style="color: rgb(0, 119, 181)"></i></a>
+        <a href="https://www.linkedin.com/in/princesannor/" target="_blank">&nbsp;<i class="fa fa-github w3-hover-opacity w3-xxlarge" style="color: #000;"></i></a>
+<p>&nbsp; &copy; Prince Steven Annor 2019</p>    
   </footer>
 
 </body>
