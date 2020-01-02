@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<title>Suacode Africa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #fff;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+nav.sticky {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+blockquote{
+    font-style: italic;
+}
+
+figcaption{
+    width: 50%;
+    margin: auto;
+
+}
+
+/*work*/
+#goals {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 90%;
+}
+
+/*impact*/
+
+.impact-photos{
+
+    margin-left:20%;
+    border: 1px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 16px;
+    width:60%;
+    height: auto;
+    max-width: 1000px;
+}
+
+/*testimonies*/
+.testimony-photo{
+    margin-left: 40%;
+}
+
+
+.flag{
+    width: 32px;
+    height: 32px;
+}
+
+.impact-captions{
+    margin-left: 35%;
+}
+
+/*again, h2 selector not working for some reason*/
+#what-is-suacode, #my-work, #impact, #testimonies, #challenges, #future-outlook{
+    font-family: 'Montserrat';
+    font-size: 22px;
+}
+
+
+.impact-photos{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.impact-captions{
+    margin:auto;
+}
+
+.testimony-photo{
+    float: left;
+}
+
+.testimony-photo{
+  margin:0;
+
+}
+
+</style>
+<body class="w3-transparent">
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky">
+        <a class="navbar-brand" href="index.html">My Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <div class="w3-dropdown-hover w3-left bg-dark w3-text-white">
+                    <button class="w3-button navbar-brand" title="More">Experience <i class="fa fa-caret-down"></i></button>     
+                    <div class="w3-dropdown-content">
+                      <a href="aim-lab.html" class="w3-bar-item w3-button">AIMLAB</a>
+                      <a href="efsi2017.html" class="w3-bar-item w3-button">EFSI 2017</a>
+                      <a href="efsi2018.html" class="w3-bar-item w3-button">EFSI 2018</a>
+                      <a href="ccd.html" class="w3-bar-item w3-button">Community Driven Development</a>
+                      <a href="suacode.html" class="w3-bar-item w3-button">Processing Foundation Fellowship</a>
+                      <a href="mobile-print.html" class="w3-bar-item w3-button">Mobile Print Project</a>
+                      <a href="robotics-lab.html" class="w3-bar-item w3-button">Robotics Lab</a>
+                      <a href="ra.html" class="w3-bar-item w3-button">Residential Education</a>
+                      <a href="space-hack.html" class="w3-bar-item w3-button">MBRSC Mars Project</a>
+                      <a href="steinhardt.html" class="w3-bar-item w3-button">Developer (NYU Steinhdardt)</a>
+                      <a href="nsesa.html" class="w3-bar-item w3-button">Nsesa Foundation</a>
+                      <a href="student-life.html" class="w3-bar-item w3-button">Student Life Facilities</a>
+                      <a href="code-of-music.html" class="w3-bar-item w3-button">Code of Music</a>
+                      <a href="westem.html" class="w3-bar-item w3-button">weSTEM Conference 2017</a>
+                    </div>
+                  </div>
+                </li>
+            <li class="nav-item">
+                <div class="w3-dropdown-hover w3-left bg-dark w3-text-white">
+                  <button class="w3-button navbar-brand" title="More">CV <i class="fa fa-caret-down"></i></button>     
+                  <div class="w3-dropdown-content w3-bar-block">
+                    <a href="doc/prince_cv4-converted.pdf" class="w3-bar-item w3-button" target="_blank">Work CV</a>
+                    <a href="doc/prince_cv4-converted1.pdf" class="w3-bar-item w3-button" target="_blank">Research CV</a>
+                  </div>
+                </div>
+              </li>      
+          </ul>
+        </div>  
+      </nav>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-transparent" id="home">
+    <h1>Suacode Africa</h1>
+    <p>Processing Foundation Fellowship 2019</p>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey" id="about">
+   <p>
+  "Sua" in Twi literally means learn. Thus, SuaCode means "learn to code". Suacode is an online mobile-based coding course/system which aims to teach millions of students across Africa software programming in Processing. SuaCode was birthed out of the challenge of low computer ownership among students that was encountered during Nsesa Foundation’s annual innovation boot camp, Project iSWEST 2017. I designed, developed and led Suacode whilst working at Nsesa Foundation, and it is still growing to reach more people in Africa. In 2019, I was awarded the <a href="https://processingfoundation.org/fellowships" target="_blank">Processing Foundation Fellowship Award</a> to develop further Suacode and scale it across the African continent.
+  </p>
+
+<br>
+  <h2 id="my-work"><i class="fa fa-puzzle-piece" style="color:purple"></i> My Work</h2>
+        
+                <p>
+                    My goals during my fellowship were to: 
+                </p>
+                    <br>
+                    
+                     <ol id="goals">
+                         <li>improve and revamp the SuaCode curriculum and course files </li>
+                         <li>develop an automated grading system for the course assignments and;</li>
+                         <li>scale the SuaCode course by running it with 700 high school and 
+                            college students in different parts of the African continent in 
+                            the 2nd quarter of 2019.</li>
+                     </ol>
+                     <br>
+                     <p>
+                            I started my fellowship in March with the development of the automated grading system for SuaCode,
+                            dubbed AutoGrad, and the search for partnerships to boost awareness about the launch of the SuaCode
+                            cohort dubbed, SuaCode Africa. I then assembled a team of four (4) developers to assist me in AutoGrad's
+                            development whilst training a team of twelve (12) African facilitators and administrators
+                            around the globe&mdash;Miami, Rochester, Hanover, Chicago, San Francisco in the U.S. and  Accra, Kumasi in
+                            Ghana&mdash;in preparation for the launch of SuaCode Africa. Later in April, I revamped and extended
+                            the SuaCode system and curriculum and set up the Google Classroom course pages in preparation for SuaCode Africa.
+                    <br>
+                    <br>
+                    <br>
+                   
+
+                     </p>
+                   
+                 
+                <h2 id="impact"><i class="fa fa-line-chart" style="color:blue"></i> Impact</h2>
+        
+                <p>
+                        Seven hundred and nine (709)
+                        students all over Africa applied to take part in SuaCode Africa,
+                        showing there is a real interest in smartphone-based coding in the region.
+                        All 709 students that were conditionally admitted (admission into the main
+                        program was contingent on completing the course's first two modules) were from 37 
+                        countries in Africa and the diaspora, and they were 
+                        invited to join the SuaCode Google Classroom course.
+                        After the second module, 210 students from 27 countries were admitted
+                        into the main program (Fig 1. below) with 25% being female.
+                    <br>
+                    <br>
+                    <br>
+
+                    <img class="impact-photos" src="project-img/website/suacode/countries.jpg" alt="countries">
+                    <br><br>
+                    <figcaption class="impact-captions">Fig.1 Countries represented in SuaCode Africa</figcaption>
+                  
+                </p>
+                <br>
+                <p>
+                        In the main program, AutoGrad is used to fetch student assignments using the Python Google Classroom API,
+                        grade the assignments in Processing, and provide relevant feedback electronically.
+                       
+
+                        Similar to previous cohorts, students read lesson notes in the Google Classroom app and wrote 
+                        their code using the Android Processing Development Environment (APDE) application (Fig. 2). <br><br>
+                        <img class="impact-photos" src="project-img/website/suacode/apde.jpg" alt="apde"> <br><br>
+                        <figcaption class="impact-captions">Fig.2 Coding with the APDE on a smartphone</figcaption>
+                        <br>
+                </p>
+                <p>
+                    For each assignment submission, the students included a reflection essay describing among several 
+                    things, whether the lesson and assignment were fun, challenging, etc. and the experience of coding the
+                    assignment with their smartphones. They posted questions in the classroom forum and received help from the
+                    facilitators and their peers.<br> <br> A total completion rate of 72% was recorded with a total of 171 out of 210 
+                    students granted certificates of completion (Fig. 3).<br> <br>
+                    <img class="impact-photos"src="project-img/website/suacode/male-female-percent.svg" alt="male-female"> <br><br>
+                    <figcaption class="impact-captions">Fig. 3 Male and Female Pass Percentages</figcaption> <br>
+                </p>
+
+                <p>
+                    The female pass rate (76%) was higher than the male pass rate (71%). 
+                    Students who performed outstandingly had
+                    a mentoring session with a tech professional at Google. 
+                </p>
+
+                <p>
+                    At the end of the program, 86% agreed that the in-class exercises
+                    and assignments were helpful in understanding the material, 77% completed
+                    the final project, 91% agreed that they are interested in learning advanced concepts
+                    in Programming and 100% agreed we inspired their interest in Programming.
+                    More details are in <a href="https://medium.com/processing-foundation/interview-with-2019-fellow-prince-steven-annor-ffb310e60401" target="_blank" style="text-decoration: none; color:blue">this article</a>.
+                </p>
+                <br>
+                <br>
+
+                <h2 id="testimonies"><i class="fa fa-smile-o" style="color: orange"></i> Testimonies</h2>
+                             
+        
+                <img class="testimony-photo" src="project-img/website/suacode/Thato Nicole Tau.png" alt="Thato">
+            <blockquote>
+                    "As a first-time coder I had many reservations at the beginning of the program.
+                    From day 1 the Suacode team was very hands-on in making sure that whatever 
+                    we needed assistance with they helped. With every week of the program that passed,
+                    I saw myself grow to enjoy coding more and more! This was such a great experience 
+                    for me and I'm certain that I'll be continuing on this journey." 
+                  
+            </blockquote>
+            <figcaption>&mdash; Thato Nicole Tau, Botswana <img class="flag" src="project-img/website/suacode/bw.svg" alt="bw"></figcaption>
+            <br>
+            <br>
+            <br>
+            <br>
+                      
+               
+        
+                <img class="testimony-photo"src="project-img/website/suacode/Segun Omole.jpg.png" alt="Segun">
+                <blockquote>
+                        "My experience at Suacode Africa was an absolute delight and a 
+                        truly fulfilling experience. I joined the program with practically
+                        no knowledge of programming and left with a strong foundation in coding
+                        established. The mentors were very supportive and always made themselves 
+                        available to help us in any way we needed. I felt very pleased with the end 
+                        result as I was able to make my very own video game in 5 weeks time. I fully 
+                        recommend the program to every newcomer to code."
+                </blockquote>
+                <figcaption> &mdash; Segun Omole, Nigeria <img class="flag" src="project-img/website/suacode/ng.svg" alt="ng"></figcaption>
+                <br>
+                <br>
+               <br>
+               <br>
+
+                <img class="testimony-photo" src="project-img/website/suacode/Tiwonge Lwara.png" alt="Tiwonge">
+               
+                <blockquote>
+                        "SuaCode is one of the best online training opportunities.
+                        It was my first time to learn Processing Programming Language
+                        and I am grateful for the way SuaCode has taught me the basic concepts.
+                        The learning materials were easy to follow and straight forward.
+                        I really like the way the tutors were committed to guide and aid us throughout the course.
+                        I can't wait to be invited again for Advanced Lessons in the near future."
+        
+                </blockquote>
+               <figcaption> &mdash; Tiwonge Lwara, Malawi <img class="flag" src="project-img/website/suacode/mw.svg" alt="mw"></figcaption>
+                 <br>
+                <br>
+                <br>
+                <br>
+        
+                <h2 id="challenges"> <i class="fa fa-wrench" style="color:red"></i> Challenges</h2>
+        
+                <p>
+                     The challenges I faced were very variegated but they weren't unexpected.
+                     From forming partnerships to publicize SuaCode Africa to eventually running the cohort
+                     with a larger number of participants who speak different languages, each challenge is very
+                     unique in its own way. Additionally, some features of the automatic grading system AutoGrad 
+                     were still under development and I had to grade many students' assignments manually.
+                     <br>
+                     <br>
+                     I addressed these challenges by making use of my connections in the UAE, US, Ghana and Nigeria
+                     to gain publicity for SuaCode. Relying on Google Translate and help from collaborators from Francophone countries,
+                     I was able to fix the language barrier problem. 
+                    In the end, these challenges made me a better leader, programmer, instructor and researcher.
+                    I learnt quite a lot about leading big projects, allocating funds and working with other organizations.
+                    Generally, I have acquired a lot of experiential knowledge and broadened my perspective by leading this project.
+                 
+                </p>
+                <br>
+                <br>
+        
+                <h2 id="future-outlook"><i class="fa fa-globe" style="color:#009900"></i> Future Outlook</h2>
+        
+                <p>
+                    There will be three cohorts of Suacode Africa each year, the next cohort would be launched in October 2019.
+                    The team is designing an advanced coding course that would be piloted
+                     at the end of 2019 as the next step for students from Suacode Africa. 
+                    We are currently doing lots of data analysis and preparing for publications
+                     on coding on smartphones and online courses. Lastly, the AutoGrad team is developing Autograd further and a new AI for the Suacode forum.
+                </p>
+
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey">
+        <a href="https://www.facebook.com/princestevenannor" target="_blank"> &nbsp; <i class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i></a>
+        <a href="https://twitter.com/princesannor" target="_blank">&nbsp;<i class="fa fa-twitter w3-hover-opacity w3-xxlarge" style="color: rgb(8, 160, 233)"></i></a>
+        <a href="https://www.linkedin.com/in/princesannor/" target="_blank">&nbsp;<i class="fa fa-linkedin w3-hover-opacity w3-xxlarge" style="color: rgb(0, 119, 181)"></i></a>
+        <a href="https://github.com/PrinceSAnnor" target="_blank">&nbsp;<i class="fa fa-github w3-hover-opacity w3-xxlarge" style="color: #000;"></i></a>
+<p>&nbsp; &copy; Prince Steven Annor 2020</p>    
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
