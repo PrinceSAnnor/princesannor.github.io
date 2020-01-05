@@ -53,6 +53,19 @@ nav.sticky {
   top: 0;
 }
 </style>
+
+<script type="text/javascript">
+	$(window).scroll(function () {
+  //set scroll position in session storage
+  sessionStorage.scrollPos = $(window).scrollTop();
+});
+var init = function () {
+   //return scroll position in session storage
+   $(window).scrollTop(sessionStorage.scrollPos || 0)
+};
+window.onload = init;
+</script>
+
 <body class="w3-light-grey">
   
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky">
@@ -265,18 +278,18 @@ frameborder="0" allowfullscreen class="video"></iframe>
       <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-amber"></i>Education</h3>
 
       <div class="w3-container">
-        <h5 class="w3-opacity"><b>New York University, Abu Dhabi, UAE</b></h5>
+        <h5 class="w3-opacity"><b><a href="https://nyuad.nyu.edu/en/" target="_blank">New York University</a>, Abu Dhabi, UAE</b></h5>
         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2020</h6>
         <p>Bachelor of Science, Computer Engineering</p>
     </div>
 
       <div class="w3-container">
-        <h5 class="w3-opacity"><b>New York University, New York, USA</b></h5>
+        <h5 class="w3-opacity"><b><a href="https://www.nyu.edu/" target="_blank">New York University</a>, New York, USA</b></h5>
         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Spring 2019</h6>
         <p>Semester abroad at NYU Tandon School of Engineering and NYU Tisch School of Arts (Interactive Media Arts)</p>
     </div>
       <div class="w3-container">
-        <h5 class="w3-opacity"><b>New York University, Shanghai, CHN</b></h5>
+        <h5 class="w3-opacity"><b><a href="https://shanghai.nyu.edu/" target="_blank">New York University</a>, Shanghai, CHN</b></h5>
         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>January Term, 2018</h6>
         <p>Term abroad at NYU Shanghai</p>
     </div>
@@ -287,7 +300,7 @@ frameborder="0" allowfullscreen class="video"></iframe>
         <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-cogs fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Research Experience</h3>
 
         <div class="w3-container">
-          <h5 class="w3-opacity"><b><a href="robotics-lab.html" target="_blank">Researcher, Robotics Lab</a>. Abu Dhabi, UAE</b></h5>
+          <h5 class="w3-opacity"><b><a href="robotics-lab.html">Researcher, Robotics Lab</a>. Abu Dhabi, UAE</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2019 - July 2019</h6>
              <p>
               <ul style="list-style-type:circle;">
@@ -296,7 +309,7 @@ frameborder="0" allowfullscreen class="video"></iframe>
         </div>
 
           <div class="w3-container">
-            <h5 class="w3-opacity"><b><a href="aim-lab.html" target="_blank">Researcher, Applied Interactive Multimedia (AIM) Research Group</a>. Abu Dhabi, UAE.</b></h5>
+            <h5 class="w3-opacity"><b><a href="aim-lab.html">Researcher, Applied Interactive Multimedia (AIM) Research Group</a>. Abu Dhabi, UAE.</b></h5>
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2017 - Nov 2018</h6>
              <p>
               <ul style="list-style-type:circle;">
@@ -309,7 +322,7 @@ frameborder="0" allowfullscreen class="video"></iframe>
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h3>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b><a href="student-life.html" target="_blank">Student Life Facilities Assistant</a>, New York University Abu Dhabi Campus Life. Abu Dhabi, UAE</b></h5>
+          <h5 class="w3-opacity"><b><a href="student-life.html">Student Life Facilities Assistant</a>, New York University Abu Dhabi Campus Life. Abu Dhabi, UAE</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2016 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
              <p>
               <ul style="list-style-type:circle;">
@@ -319,7 +332,7 @@ frameborder="0" allowfullscreen class="video"></iframe>
         </div>
 
         <div class="w3-container">
-          <h5 class="w3-opacity"><b><a href="ra.html" target="_blank">Residential Assistant</a>, New York University Abu Dhabi Residential Education. Abu Dhabi, UAE</b></h5>
+          <h5 class="w3-opacity"><b><a href="ra.html">Residential Assistant</a>, New York University Abu Dhabi Residential Education. Abu Dhabi, UAE</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2016 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
              <p>
               <ul style="list-style-type:circle;">
@@ -328,7 +341,7 @@ frameborder="0" allowfullscreen class="video"></iframe>
               </ul><hr></p>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b><a href="suacode.html" target="_blank">Processing Fellow</a>, Processing Foundation. New York, USA</b></h5>
+          <h5 class="w3-opacity"><b><a href="suacode.html">Processing Fellow</a>, Processing Foundation. New York, USA</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2019 - Jul 2019</h6>
              <p>
               <ul style="list-style-type:circle;">
@@ -337,7 +350,7 @@ frameborder="0" allowfullscreen class="video"></iframe>
               </ul><hr></p>
         </div>
         <div class="w3-container">
-            <h5 class="w3-opacity"><b><a href="steinhardt.html" target="_blank">Developer/technology services support</a>, NYU Steinhardt School of Culture, Education, and Human Development. New York, USA</b></h5>
+            <h5 class="w3-opacity"><b><a href="steinhardt.html">Developer/technology services support</a>, NYU Steinhardt School of Culture, Education, and Human Development. New York, USA</b></h5>
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2019 - Jun 2019</h6>
              <p>
               <ul style="list-style-type:circle;">
@@ -350,7 +363,7 @@ frameborder="0" allowfullscreen class="video"></iframe>
             <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-cubes fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Leadership and Community Involvement </h3>
         <div class="w3-container">
-            <h5 class="w3-opacity"><b><a href="mobile-print.html" target="_blank">Mobile Print Developer and Administrator</a>, Mobile Print Project. Abu Dhabi, UAE.</b></h5>
+            <h5 class="w3-opacity"><b><a href="mobile-print.html">Mobile Print Developer and Administrator</a>, Mobile Print Project. Abu Dhabi, UAE.</b></h5>
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2016 - May 2019</h6>
             <p>
               <ul style="list-style-type:circle;">
@@ -359,7 +372,7 @@ frameborder="0" allowfullscreen class="video"></iframe>
               </ul><hr></p>
           </div>
         <div class="w3-container">
-            <h5 class="w3-opacity"><b><a href="space-hack.html" target="_blank">Mars mission researcher and OBC software developer</a>, Team NYUAD. Dubai, UAE.</b></h5>
+            <h5 class="w3-opacity"><b><a href="space-hack.html">Mars mission researcher and OBC software developer</a>, Team NYUAD. Dubai, UAE.</b></h5>
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - Feb 2018</h6>
             <p>
               <ul style="list-style-type:circle;">
@@ -374,7 +387,7 @@ frameborder="0" allowfullscreen class="video"></iframe>
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Teaching and Mentoring Experience</h3>
         <div class="w3-container">
-            <h5 class="w3-opacity"><b><a href="nsesa.html" target="_blank">Executive - Nsesa Foundation, Project Lead</a>, Nsesa Foundation. Accra, Ghana.</b></h5>
+            <h5 class="w3-opacity"><b><a href="nsesa.html">Executive - Nsesa Foundation, Project Lead</a>, Nsesa Foundation. Accra, Ghana.</b></h5>
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2017 - Sep 2019</h6>
              <p>
               <ul style="list-style-type:circle;">
@@ -384,7 +397,7 @@ frameborder="0" allowfullscreen class="video"></iframe>
           </div>
 
         <div class="w3-container">
-            <h5 class="w3-opacity"><b><a href="westem.html" target="_blank">Workshop organizer</a>, weSTEM High School conference. Abu Dhabi, UAE. </b></h5>
+            <h5 class="w3-opacity"><b><a href="westem.html">Workshop organizer</a>, weSTEM High School conference. Abu Dhabi, UAE. </b></h5>
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2017 - Mar 2018</h6>
              <p>
               <ul style="list-style-type:circle;">
