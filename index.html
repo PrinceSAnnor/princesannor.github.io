@@ -192,63 +192,28 @@ window.onload = init;
           </div>
           <br>
           Fabrication tools
-          <div class="w3-light-grey w3-round-xlarge w3-small"  style="margin-bottom: 25px">
+          <div class="w3-light-grey w3-round-xlarge w3-small"  style="margin-bottom:28px">
             <div class="w3-container w3-center w3-round-xlarge w3-orange" style="height:18px;width:60%"></div>
           </div>
 
-          <hr>
+          <div style="margin-bottom: 15px; display: none;" id="more1" class="w3-white w3-text-grey">
+            C, C++, C#, Java, JS, Processing, ROS, Electronics, Assembly, Video production, SolidWorks, Illustrator, Web development, Python, MATLAB, DMX programming, VR, Audio Visual systems, Database systems, Experience with using laser cutter, 3D printer and other fabrication tools, Photography, Photoshop Lightroom, MS Excel. <br> <br>
+          </div>
+       <button onclick="myExtendAboutFunction1()" id="myBtn1" class="btn1">Read more</button>
+    <script>
+    function myExtendAboutFunction1() {
+      var moreText = document.getElementById("more1");
+      var btnText = document.getElementById("myBtn1");
 
-          <h5><b><i class="fa-fw w3-text-teal"></i>Soft and Managerial skills</b></h5>
-           Intercultural Collaboration
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="height:18px;width:90%"></div>
-          </div>
-          <br>
-           Project Management
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="height:18px;width:85%"></div>
-          </div>
-          <br>
-          Creativity
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="height:18px;width:85%"></div>
-          </div>
-          <br>
-          Adaptability
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="height:18px;width:80%"></div>
-          </div>
-          <br>
-          Self-motivation
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="height:18px;width:85%"></div>
-          </div>
-          <br>
-          Research
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="height:18px;width:85%"></div>
-          </div>
-          <br>
-          Teamwork
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="height:18px;width:80%"></div>
-          </div>
-          <br>
-          Leadership
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="height:18px;width:80%"></div>
-          </div>
-          <br>
-          Written communication
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="height:18px;width:80%"></div>
-          </div>
-          <br>
-          Records and Event management
-          <div class="w3-light-grey w3-round-xlarge w3-small" style="margin-bottom: 25px">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="height:18px;width:85%"></div>
-          </div>
-
+      if (btnText.innerHTML == "Read less") {
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
           <hr>
 
           <h5><b><i class="fa-fw w3-text-teal"></i>Operating systems</b></h5>
@@ -289,6 +254,31 @@ window.onload = init;
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-yellow" style="height:18px;width:20%"></div>
           </div>
+
+
+          <hr>
+
+          <h5><b><i class="fa-fw w3-text-teal"></i>Soft and Managerial skills</b></h5>
+           Intercultural Collaboration
+          <br><br>
+           Project Management
+          <br><br>
+          Creativity
+          <br><br>
+          Adaptability
+          <br><br>
+          Self-motivation
+          <br><br>
+          Research
+          <br><br>
+          Teamwork
+          <br><br>
+          Leadership
+          <br><br>
+          Written communication
+          <br><br>
+          Records and Event management
+          <br>
           <br>
         </div>
       </div><br>
