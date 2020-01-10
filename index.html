@@ -155,7 +155,7 @@ ga('send', 'pageview');
           <div class="w3-white w3-text-grey w3-card-4 w3-margin-bottom">
           <div class="w3-container">
           <h3 style="margin-bottom: 12px; margin-top: 10px;"><i class="fa fa-star fa-fw w3-margin-right w3-text-teal"></i>Skills</h3>
-          <h5 style="margin-bottom: 10px"><b><i class="fa-fw w3-text-teal"></i>Tools & Technologies</b></h5>
+          <h5 style="margin-bottom: 10px"><b><i class="fas fa-toolbox fa-fw w3-text-teal"></i> Tools & Technologies</b></h5>
           Multimedia Engineering
 
           <br><br>
@@ -165,27 +165,12 @@ ga('send', 'pageview');
 <br><br>
           Software Development
   <br><br>
-          Internet of Things
-<br><br>
-          Data Analytics
-<br><br>
-          Haptics & VR Development
-
-<br><br>
-          Computer Vision
-
-<br><br>
           Machine Learning
 
-<br><br>
-          Computer Networking
-
-          <br><br>
-          Fabrication tools
           <br><br>
 
           <div style="margin-bottom: 15px; display: none;" id="more1" class="w3-white w3-text-grey">
-            C, C++, C#, Java, JS, Processing, ROS, Electronics, Assembly, Video production, SolidWorks, Illustrator, Web development, Python, MATLAB, DMX programming, VR, Audio Visual systems, Database systems, Experience with using laser cutter, 3D printer and other fabrication tools, Photography, Photoshop Lightroom, MS Excel. <br> <br>
+            Internet of Things, C, C++, Computer Networking, C#, Computer Vision, Java, Data Analytics, JS, Processing, ROS, Electronics, Assembly, Video production, SolidWorks, Illustrator, Haptics & VR Development, Web development, Python, MATLAB, DMX programming, VR, Audio Visual systems, Database systems, Experience with using laser cutter, 3D printer and other fabrication tools, Photography, Photoshop Lightroom, MS Excel. <br> <br>
           </div>
        <button onclick="myExtendAboutFunction1()" id="myBtn1" class="btn1">Read more</button>
     <script>
@@ -204,7 +189,7 @@ ga('send', 'pageview');
     </script>
           <hr>
 
-          <h5><b><i class="fa-fw w3-text-teal"></i>Operating systems</b></h5>
+          <h5><b><i class="fas fa-sliders-h fa-fw w3-text-teal"></i> Operating systems</b></h5>
            Windows XP, Vista, 7, 8 and 10
           <br><br>
           Linux (Raspbian, Kali, Ubuntu, Mint)
@@ -213,33 +198,36 @@ ga('send', 'pageview');
 
           <hr>
 
-<h5><b><i class="fa-fw w3-text-teal"></i>Soft and Miscellaneous</b></h5>
+<h5><b><i class=" fas fa-compress fa-fw w3-text-teal"></i> Soft and Miscellaneous</b></h5>
            Intercultural Collaboration
           <br><br>
            Project Management
           <br><br>
           Creativity
           <br><br>
-          Adaptability
-          <br><br>
-          Self-motivation
-          <br><br>
           Research
           <br><br>
-          Teamwork
-          <br><br>
-          Leadership
-          <br><br>
-          Teamwork
-          <br><br>
-          Active Listening
-          <br><br>
-          Written communication
-          <br><br>
-          Records and Event management
 
+          <div style="margin-bottom: 15px; display: none;" id="more2" class="w3-white w3-text-grey">
+            Adaptability, Records and Event management, Written communication, Active Listening, Teamwork, Leadership. <br> <br>
+          </div>
+       <button onclick="myExtendAboutFunction2()" id="myBtn2" class="btn1">Read more</button>
+    <script>
+    function myExtendAboutFunction2() {
+      var moreText = document.getElementById("more2");
+      var btnText = document.getElementById("myBtn2");
+
+      if (btnText.innerHTML == "Read less") {
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
 <hr>
-          <h5><b><i class="fa-fw w3-text-teal"></i>Languages</b></h5>
+          <h5><b><i class=" fas fa-globe-africa fa-fw w3-text-teal"></i> Languages</b></h5>
           English
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:14px;width:95%"></div>
@@ -262,7 +250,8 @@ ga('send', 'pageview');
         </div>
         <br>
       </div>
-                <div class="w3-white w3-text-grey w3-card">
+
+     <div class="w3-white w3-text-grey w3-card w3-margin-bottom">
         <div class="w3-container">
           <h3 style="margin-bottom: 12px; margin-top: 10px;"><i class="fas fa-award fa-fw w3-margin-right w3-text-teal"></i>Recent Awards</h3>
           <h5 style="margin-bottom: 10px"><b><i class="fa-fw w3-text-teal"></i>Processing Foundation Fellowship 2019</b></h5>
@@ -282,7 +271,7 @@ ga('send', 'pageview');
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw"></i> Feb 2018</h6>
             <h6 class="w3-text-grey"><i class="far fa-building w3-text-teal"></i><b> MBRSC</b></h6>
              <p style="margin-top: 1px;">
-              I co-authored a research proposal for a hypothetical nanosat experiment to survey atmospheric density and dust profiles in the lower atmosphere of Mars. The proposal was accepted and I developed the C++ OBC code for surveying atmospheric density and dust profiles and simulated the experiment by collecting sensor data from varying luminosity, heat, and acceleration conditions. I then co-presented the research, data, and analysis to a panel of judges, and my team won the UAE Space Hackathon 2018.
+              I co-authored a research proposal for a hypothetical nanosat experiment to survey atmospheric density and dust profiles in the lower atmosphere of Mars, developed the C++ OBC code and simulated the experiment by collecting, processing and visualizing sensor data from varying luminosity, heat, and acceleration conditions.
             </p>
               <p>
                   <a href="https://nyuad.nyu.edu/en/news/latest-news/honors-and-awards/2018/february/nyuad-students-win-uae-space-hackathon.html" target="_blank"><i class="fas fa-link" aria-hidden="true"></i> Link</a>
@@ -295,13 +284,69 @@ ga('send', 'pageview');
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw"></i> Feb 2018</h6>
             <h6 class="w3-text-grey"><i class="far fa-building w3-text-teal"></i><b> HACKAD</b></h6>
              <p>
-              Indoor weather station for the classrooms and labs at New York University Abu Dhabi. I read and processed data from temperature and humidity sensors using a Raspberry Pi Zero. I then normalized and visualized the results in charts on a public Github webpage that was accessible to students. With the Indoor Weather Station, students and faculty with different temperature preferences can prepare themselves with real-time temperature data of the classrooms they would be visiting. <br>
+              Indoor weather station for the classrooms and labs at New York University Abu Dhabi. <br>
               </p>
               <p>
                   <a href="https://devpost.com/software/indoor-weather-station" target="_blank"><i class="fas fa-link" aria-hidden="true"></i> Link</a>
                 </p>
           </div>
 
+        </div>
+
+        <div class="w3-white w3-text-grey w3-card w3-margin-bottom">
+        <div class="w3-container">
+          <h3 style="margin-bottom: 12px; margin-top: 10px;"><i class="fas fa-book-open fa-fw w3-margin-right w3-text-teal"></i>Publications</h3>
+             <p>
+              Processing Foundation Fellowship Interview: Suacode Africa 2019 <br>
+            </p>
+              <p>
+                  <a href="https://medium.com/processing-foundation/interview-with-2019-fellow-prince-steven-annor-ffb310e60401" target="_blank"><i class="fas fa-link" aria-hidden="true"></i> Link</a>
+                </p>
+                <hr>
+              <p>
+              IEEE: The Role of Haptics in Digital Archaeology and Heritage Recording Processes <br>
+            </p>
+              <p>
+                  <a href="https://ieeexplore.ieee.org/document/8547505" target="_blank"><i class="fas fa-link" aria-hidden="true"></i> Link</a>
+                  <a href="doc/08547505.pdf" target="_blank" style="margin-left: 35px"><i class="far fa-file-pdf" aria-hidden="true"></i>PDF</a>
+                </p>
+          </div>
+        </div>
+
+
+         <div class="w3-white w3-text-grey w3-card">
+        <div class="w3-container">
+          <h3 style="margin-bottom: 12px; margin-top: 10px;"><i class="fas fa-project-diagram fa-fw w3-margin-right w3-text-teal"></i>Recent Projects</h3>
+             <p>
+              Smart room project that uses iOT, Raspberry PI, Flask/Flask-Ask, Android, ngrok, Web development, Alexa SDK, DMX and socket programming. <br>
+            </p>
+              <p>
+                  <a href="https://github.com/PrinceSAnnor/smart-room-project" target="_blank"><i class="fas fa-link" aria-hidden="true"></i> Link</a>
+                  <a href="https://youtu.be/b8uUbkzquAA" style="margin-left: 35px"><i class="fas fa-film" aria-hidden="true"></i> Video</a>
+                </p>
+                <hr>
+              <p>
+              Automatic grading system for SuaCode. Developed with Processing and Python with Google Apps API. <br>
+            </p>
+              <p>
+                  <a href="https://github.com/PrinceSAnnor/autograd" target="_blank"><i class="fas fa-link" aria-hidden="true"></i> Link</a>
+                </p>
+                <hr>
+                <p>
+              Emotions Melodizer 2.0 detects facial expression, measures typing speed and keystroke duration to determine whether the user is sad or happy. It then plays a note they create in an appropriate scale with a color scheme that matches their emotions. <br>
+            </p>
+              <p>
+                  <a href="https://github.com/PrinceSAnnor/Emotions-Melodizer-2.0" target="_blank"><i class="fas fa-link" aria-hidden="true"></i> Link</a>
+                </p>
+                <hr>
+                <p>
+              Autonomous robot designed and programmed with arduino, raspberry pi, two dc motors, lidar, line follower sensor and two color sensors. <br>
+            </p>
+              <p>
+                  <a href="https://github.com/PrinceSAnnor/robotcar" target="_blank"><i class="fas fa-link" aria-hidden="true"></i> Link</a>
+                </p>
+
+          </div>
         </div>
     <!-- End Left Column -->
     </div>
@@ -345,7 +390,7 @@ frameborder="0" allowfullscreen class="video"></iframe>
 </div>
  
     <div class="w3-container w3-card w3-white w3-margin-bottom">
-      <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-amber"></i>Education</h3>
+      <h3 class="w3-text-grey w3-padding-16"><i class="fas fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h3>
 
       <div class="w3-container">
         <h5 class="w3-opacity"><b>New York University, Abu Dhabi, UAE</b></h5>
