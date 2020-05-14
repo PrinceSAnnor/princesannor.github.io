@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="author" content="Prince Steven Annor">
+<title>Capstone 2019_2020</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="icon.png"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #fff;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+nav.sticky {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+</style>
+</head>
+
+<body class="w3-transparent">
+
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky">
+        <a class="navbar-brand" href="index.html">My Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <div class="w3-dropdown-hover w3-left bg-dark w3-text-white">
+                    <button class="w3-button navbar-brand" title="More">Experience <i class="fa fa-caret-down"></i></button>     
+                    <div class="w3-dropdown-content">
+                      <a href="aim-lab.html" class="w3-bar-item w3-button">AIMLAB</a>
+                      <a href="capstone.html" class="w3-bar-item w3-button">Capstone 2019_2020</a>
+                      <a href="efsi2017.html" class="w3-bar-item w3-button">EFSI 2017</a>
+                      <a href="efsi2018.html" class="w3-bar-item w3-button">EFSI 2018</a>
+                      <a href="ccd.html" class="w3-bar-item w3-button">Community Driven Development</a>
+                      <a href="suacode.html" class="w3-bar-item w3-button">Processing Foundation Fellowship</a>
+                      <a href="mobile-print.html" class="w3-bar-item w3-button">Mobile Print Project</a>
+                      <a href="robotics-lab.html" class="w3-bar-item w3-button">Robotics Lab</a>
+                      <a href="ra.html" class="w3-bar-item w3-button">Residential Education</a>
+                      <a href="collab.html" class="w3-bar-item w3-button">Robotics Collaboration</a>
+                      <a href="space-hack.html" class="w3-bar-item w3-button">MBRSC Mars Project</a>
+                      <a href="steinhardt.html" class="w3-bar-item w3-button">Developer (NYU Steinhdardt)</a>
+                      <a href="nsesa.html" class="w3-bar-item w3-button">Nsesa Foundation</a>
+                      <a href="student-life.html" class="w3-bar-item w3-button">Student Life Facilities</a>
+                      <a href="code-of-music.html" class="w3-bar-item w3-button">Code of Music</a>
+                      <a href="westem.html" class="w3-bar-item w3-button">weSTEM Conference 2018</a>
+                    </div>
+                  </div>
+                </li>
+            <li class="nav-item">
+                <div class="w3-dropdown-hover w3-left bg-dark w3-text-white">
+                  <button class="w3-button navbar-brand" title="More">CV <i class="fa fa-caret-down"></i></button>     
+                  <div class="w3-dropdown-content w3-bar-block">
+                    <a href="doc/PrinceTechResume.pdf" class="w3-bar-item w3-button" target="_blank">Technical CV</a>
+                    <a href="doc/PrinceNormResume.pdf" class="w3-bar-item w3-button" target="_blank">Resume</a>
+                  </div>
+                </div>
+              </li>      
+          </ul>
+        </div>  
+      </nav>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-transparent" id="home">
+    <h1>Collaborative Control Design for a Drone Swarm</h1>
+    <p class="w3-text-black">Researcher, Robotics Lab. Abu Dhabi, UAE.</p>
+    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw"></i> Aug 2019 - May 2020</h6>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey" id="about">
+    <h3 class="w3-text-black">Abstract</h3>
+    <p class="w3-text-black">Simultaneous localization and mapping (SLAM) allows a drone to navigate and perceive its surrounding environment. In the past, drone systems have employed many technologies to perform relative localization, including various motion detection systems. With the reduced cost of high-resolution cameras and increased computational capabilities of on-board computers, computer vision techniques are now being investigated as additive sensors to inertial measurement unit systems. </p>
+      <p class="w3-text-black">Several computer vision techniques employ fiducial markers with a recognizable pattern, in order to perform pose estimation between the camera and the attached markers in the collaborating drones. This concept is used for relative drone localization while each drone performs SLAM using using cameras, LiDAR and an IMU. In this project, a multi-sensor integration of a LiDAR sensor and a spherical-lens camera is used along with a wireless ad-hoc communication channel to assist in a collaborative control design for a drone swarm for visual aerial coverage purposes. Using simulations, a real-time Voronoi tessellation of the area in NYUAD’s Robotics lab for two of the designed drones flying at the same height is also derived and the area coverage is achieved by commanding each drone to move towards the centroid of its assigned Region of Responsibility.
+    </p>
+    <p class="w3-text-black">
+      Link to paper: <a href="doc/capstone.pdf" target="=_blank">Collaborative Control Design for a Drone Swarm</a>
+      </p>
+    <h3 class="w3-text-black">My Work</h3>
+    <p class="w3-text-black">
+      • Developed UDP/IP ad-hoc system for direct pose exchange between drones on dedicated omnidirectional wifi channel 6. <br>
+      • Co-designed Simultaneous localization and mapping system that incorporated Hector SLAM and LOAM SLAM for mapping and localizing the drone in it's immediate environment. <br>
+      • Co-developed computer vision system for relative localization using fiducial markers and a spherical camera. <br>
+      • Conducted experiments to validate the results from the multi-sensor fusion control system and ad-hoc pose exchange system using a Vicon system. 
+    </p>
+
+  <!-- Portfolio Section -->
+  <div class="w3-content" id="photos">
+    <h3 class="w3-text-black">Media</h3>
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <div>
+    		    <iframe width=100% height=285px
+    		    src="https://www.youtube.com/embed/8zo7Xkld0wU?rel=0" allowfullscreen>
+    		    </iframe>
+        </div>
+        <img src="project-img/website/capstone/1-min.jpg" style="width:100%">
+        <img src="project-img/website/capstone/carpet-min.jpg" style="width:100%">
+        <img src="project-img/website/capstone/2-min.jpg" style="width:100%">
+        <img src="project-img/website/capstone/3d_setup.png" style="width:100%">
+        <img src="project-img/website/capstone/3D_UAS.png" style="width:100%">
+        <img src="project-img/website/capstone/adhoc.png" style="width:100%">
+        <img src="project-img/website/capstone/Ardupilot-min.PNG" style="width:100%">
+        <img src="project-img/website/capstone/cage.png" style="width:100%">
+        <img src="project-img/website/capstone/camera.PNG" style="width:100%">
+        <img src="project-img/website/capstone/fiducial.png" style="width:100%">
+
+      </div>
+
+      <div class="w3-half">
+        <img src="project-img/website/capstone/Gapter_design.png" style="width:100%">
+        <img src="project-img/website/capstone/voro1.png" style="width:100%">
+        <img src="project-img/website/capstone/drones1.png" style="width:100%">
+        <img src="project-img/website/capstone/final_1-min.jpg" style="width:100%">
+        <img src="project-img/website/capstone/mon_ad.png" style="width:100%">
+        <img src="project-img/website/capstone/slam.png" style="width:100%">
+        <img src="project-img/website/capstone/solidworks-min.JPG" style="width:100%">
+        <img src="project-img/website/capstone/vicon-min.jpg" style="width:100%">
+        <img src="project-img/website/capstone/black-box-diagram.PNG" style="width:100%">
+
+      </div>
+
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-margin-top">
+      <a href="https://www.facebook.com/princestevenannor" target="_blank"> &nbsp; <i class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i></a>
+      <a href="https://scholar.google.com/citations?user=aaUljWkAAAAJ&hl=en&oi=ao" target="_blank"> &nbsp; <i class="fas fa-graduation-cap w3-hover-opacity w3-xxlarge"  style="color: rgb(64, 155, 230);"></i></a>
+      <a href="https://twitter.com/princesannor" target="_blank">&nbsp;<i class="fa fa-twitter w3-hover-opacity w3-xxlarge" style="color: rgb(8, 160, 233)"></i></a>
+      <a href="https://www.linkedin.com/in/princesannor/" target="_blank">&nbsp;<i class="fa fa-linkedin w3-hover-opacity w3-xxlarge" style="color: rgb(0, 119, 181)"></i></a>
+      <a href="https://github.com/PrinceSAnnor" target="_blank">&nbsp;<i class="fa fa-github w3-hover-opacity w3-xxlarge" style="color: #000;"></i></a>
+      <a href="https://www.youtube.com/channel/UCKMikJTr6dRei6E35b5m7Hg" target="_blank">&nbsp;<i class="fab fa-youtube w3-hover-opacity w3-xxlarge" style="color: rgb(255,0,0);"></i></a>
+<p>&nbsp; &copy; Prince Steven Annor 2020</p>    
+</footer>
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
